@@ -1,5 +1,7 @@
+import NavBar from './Component/NavBar/NavBar';
+
 function App() {
-  return 'Find your best smart real estate ';
+  return <NavBar />;
 }
 
 export default App;
