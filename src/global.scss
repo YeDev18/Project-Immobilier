@@ -3,7 +3,7 @@
 $primaryColor: #3b454f;
 $secondColor: #20a39d;
 $backgroundFirst: #edeee9;
-$textColor: #99bad2;
+$textColor: #acc1cf;
 $titleColor: #29333d;
 $itemsColor: #f6624a;
 
@@ -20,4 +20,36 @@ html {
   font-size: 62, 5%; //62.5% === 10px So 1rem= 10px, 16px=1.6rem
   font-family: 'Mukta', sans-serif;
   font-size: 18px;
+  overflow: hidden;
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: $primaryColor;
+  }
+}
+// #root {
+//   position: relative;
+// }
+//Responsive Nav Bar
+@mixin navResponsive {
+  @media screen and (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+    background-color: $backgroundFirst;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 150%;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  &.active {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
 }

@@ -1,0 +1,41 @@
+@import '../../global.scss';
+.presentation {
+  min-height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 0rem;
+  display: flex;
+  &_text {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5rem;
+    overflow: visible;
+    gap: 2rem;
+    h1 {
+      font-size: 5rem;
+      line-height: 1em;
+      padding-bottom: 1rem;
+      color: $titleColor;
+    }
+    p {
+      font-size: 1.3rem;
+      color: $textColor;
+      text-shadow: 15px 1px 10px rgba(0, 0, 0, 0.19);
+    }
+    &-nav {
+      width: 120%;
+      height: 7rem;
+      background-color: $primaryColor;
+      z-index: 150;
+      margin-bottom: 2rem;
+    }
+  }
+  &_image {
+    width: 100vw;
+    background-image: url(../../assets/11.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}

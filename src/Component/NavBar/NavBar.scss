@@ -1,0 +1,55 @@
+@import '../../global.scss';
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  position: relative;
+  z-index: 199;
+
+  h1 {
+    color: $titleColor;
+    font-size: 1.5rem;
+  }
+  &_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    white-space: nowrap;
+    // @media screen and (max-width: 780px) {
+    //   display: flex;
+    //   flex-direction: column;
+    //   background-color: $backgroundFirst;
+    //   align-items: center;
+    //   justify-content: center;
+    //   width: 100vw;
+    //   height: 100vh;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 150%;
+    //   z-index: -1;
+    //   transition: 0.3s ease-in-out;
+    // }
+    @include navResponsive;
+  }
+
+  &_menu-items {
+    font-size: 1rem;
+    &:nth-last-child(1) {
+      background-color: $secondColor;
+      padding: 0.3rem 1.8rem 0.3rem 1.8rem;
+    }
+  }
+  &_menu-contact {
+    color: $backgroundFirst;
+  }
+  &_menu-icons {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    @media screen and (max-width: 780px) {
+      display: flex;
+    }
+  }
+}
