@@ -20,7 +20,7 @@ html {
   font-size: 62, 5%; //62.5% === 10px So 1rem= 10px, 16px=1.6rem
   font-family: 'Mukta', sans-serif;
   font-size: 18px;
-  // overflow: hidden;
+
   a {
     list-style: none;
     text-decoration: none;
@@ -28,7 +28,7 @@ html {
   }
 }
 // #root {
-//   position: relative;
+//   // position: relative;
 // }
 //Responsive Nav Bar
 @mixin navResponsive {
@@ -42,7 +42,7 @@ html {
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 150%;
+    left: -150%;
     z-index: -1;
     transition: 0.3s ease-in-out;
   }
@@ -51,5 +51,16 @@ html {
     left: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
+  }
+}
+@mixin HeroResponsive {
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+}
+@mixin TextCenter {
+  @media screen and (max-width: 900px) {
+    text-align: center;
   }
 }

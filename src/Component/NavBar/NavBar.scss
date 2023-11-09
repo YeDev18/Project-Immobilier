@@ -17,20 +17,6 @@
     align-items: center;
     gap: 30px;
     white-space: nowrap;
-    // @media screen and (max-width: 780px) {
-    //   display: flex;
-    //   flex-direction: column;
-    //   background-color: $backgroundFirst;
-    //   align-items: center;
-    //   justify-content: center;
-    //   width: 100vw;
-    //   height: 100vh;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 150%;
-    //   z-index: -1;
-    //   transition: 0.3s ease-in-out;
-    // }
     @include navResponsive;
   }
 

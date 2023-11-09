@@ -26,3 +26,19 @@ export const MenuItems = [
     class: 'navbar_menu-contact',
   },
 ];
+
+export const miniTab = ['Buy', 'Sell', 'Rental'];
+export const formTab = [
+  {
+    item: 'Location',
+    placeholder: 'Select your city',
+  },
+  {
+    item: 'Property Type',
+    placeholder: 'Choose Property Type',
+  },
+  {
+    item: 'Price Range',
+    placeholder: 'Choose a image',
+  },
+];
