@@ -30,14 +30,17 @@ export const MenuItems = [
 export const miniTab = ['Buy', 'Sell', 'Rental'];
 export const formTab = [
   {
+    id: 0,
     item: 'Location',
     placeholder: 'Select your city',
   },
   {
+    id: 1,
     item: 'Property Type',
     placeholder: 'Choose Property Type',
   },
   {
+    id: 2,
     item: 'Price Range',
     placeholder: 'Choose a image',
   },

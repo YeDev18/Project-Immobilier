@@ -3,7 +3,7 @@ import { miniTab, formTab } from '../data';
 import { Icon } from '@iconify/react';
 import './Hero.scss';
 const Hero = () => {
-  const [selectTab, setSelectTab] = useState(0);
+  // const [selectTab, setSelectTab] = useState(0);
   return (
     <section className="presentation">
       <div className="presentation_text">
@@ -26,14 +26,14 @@ const Hero = () => {
           </ul>
           <div className="presentation_text-nav_information">
             <form>
-              {formTab.map((form, index) => {
-                return (
+              <span className="form_detail">
+                {formTab.map(form => (
                   <>
                     <div
-                      key={index}
                       className="presentation_text-nav_information-detail"
+                      key={form.id}
                     >
-                      <label htmlFor="">{form.item}</label>
+                      <label>{form.item}</label>
                       <input
                         type="text"
                         name="text"
@@ -42,11 +42,11 @@ const Hero = () => {
                       />
                     </div>
                   </>
-                );
-              })}
-              <div>
-                <Icon icon="material-symbols:search" />
-              </div>
+                ))}
+              </span>
+              <button className="presentation_text-nav_information-icon">
+                <Icon icon="material-symbols:search" className="drawing" />
+              </button>
             </form>
           </div>
         </div>
