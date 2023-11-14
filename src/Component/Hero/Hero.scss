@@ -140,10 +140,15 @@
             cursor: pointer;
             @media (max-width: 768px) {
               width: 50%;
+              &::after {
+                content: 'Search';
+                color: $backgroundFirst;
+                font-size: 1rem;
+              }
             }
             .drawing {
               font-size: 3rem;
-              padding: 0.7rem;
+              padding: 0.7rem 0rem 0.7rem 0.7rem;
               color: $backgroundFirst;
             }
           }
@@ -151,6 +156,7 @@
       }
     }
   }
+
   &_image {
     width: 120%;
     background-image: url(../../assets/11.jpg);

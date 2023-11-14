@@ -1,0 +1,33 @@
+@import '../../global.scss';
+
+section {
+  padding: 1rem 0 1rem 0;
+  .partner_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: $titleColor;
+    }
+    p {
+      color: $textColor;
+    }
+  }
+  .partner_image {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      width: 10%;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      // grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      flex-wrap: wrap;
+      // gap: 3rem;
+      // place-items: center;
+    }
+  }
+}

@@ -28,20 +28,18 @@ const Hero = () => {
             <form>
               <span className="form_detail">
                 {formTab.map(form => (
-                  <>
-                    <div
-                      className="presentation_text-nav_information-detail"
-                      key={form.id}
-                    >
-                      <label>{form.item}</label>
-                      <input
-                        type="text"
-                        name="text"
-                        id=""
-                        placeholder={form.placeholder}
-                      />
-                    </div>
-                  </>
+                  <div
+                    className="presentation_text-nav_information-detail"
+                    key={form.id}
+                  >
+                    <label>{form.item}</label>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      placeholder={form.placeholder}
+                    />
+                  </div>
                 ))}
               </span>
               <button className="presentation_text-nav_information-icon">
@@ -52,6 +50,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="presentation_image"></div>
+      <div className="viva"></div>
     </section>
   );
 };
