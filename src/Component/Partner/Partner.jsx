@@ -10,7 +10,11 @@ const Partner = () => {
       </div>
       <div className="partner_image">
         {partner.map((part, index) => {
-          return <img key={index} src={part} alt="" />;
+          return (
+            <div key={index} className="partner_image-block">
+              <img src={part} alt="" />
+            </div>
+          );
         })}
       </div>
     </section>

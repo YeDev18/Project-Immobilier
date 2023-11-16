@@ -16,18 +16,14 @@ section {
   }
   .partner_image {
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    img {
-      width: 10%;
-    }
-    @media (max-width: 768px) {
+    gap: 3rem;
+    padding: 2rem 0rem;
+    .partner_image-block {
+      width: 8rem;
       display: flex;
-      // grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
-      flex-wrap: wrap;
-      // gap: 3rem;
-      // place-items: center;
     }
   }
 }
