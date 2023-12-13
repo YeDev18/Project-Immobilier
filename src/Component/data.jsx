@@ -53,3 +53,30 @@ export const formTab = [
 ];
 
 export const partner = [img1, img2, img3, img4, img5];
+
+export const steps = [
+  {
+    title: 'Find excellent deals',
+    text: 'We provide a complete service fore the safe lorem ipsum ',
+  },
+  {
+    title: 'Property insurance',
+    text: 'We provide a complete service fore the safe lorem ipsum ',
+  },
+  {
+    title: 'Frendly host',
+    text: 'We provide a complete service fore the safe lorem ipsum ',
+  },
+  {
+    title: '24 hours consultation',
+    text: 'We provide a complete service fore the safe lorem ipsum ',
+  },
+  {
+    title: 'Fast respon',
+    text: 'We provide a complete service fore the safe lorem ipsum ',
+  },
+  {
+    title: 'Compagny professionnal',
+    text: 'We provide a complete service fore the safe lorem ipsum ',
+  },
+];

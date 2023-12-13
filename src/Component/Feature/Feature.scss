@@ -1,0 +1,44 @@
+@import '../../global.scss';
+.feature {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  .feature_text {
+    h2 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      padding-bottom: 1rem;
+    }
+    .feature_text-p {
+      font-size: 1rem;
+      color: $textColor;
+      padding-bottom: 2rem;
+    }
+    .feature_text-step {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+
+      div {
+        background-color: $backgroundFirst;
+        padding: 0.2rem 0 0.2rem 1.1rem;
+        border-left: 7px solid $itemsColor;
+        h3 {
+          font-size: 0.9rem;
+        }
+        .feature_text-step-p {
+          font-size: 0.8rem;
+          color: $textColor;
+        }
+      }
+    }
+  }
+  .feature_image {
+    display: flex;
+    justify-content: flex-end;
+    .feature_image-picture {
+      width: 80%;
+      min-height: 500px;
+    }
+  }
+}

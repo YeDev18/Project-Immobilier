@@ -3,7 +3,6 @@ import { miniTab, formTab } from '../data';
 import { Icon } from '@iconify/react';
 import './Hero.scss';
 const Hero = () => {
-  // const [selectTab, setSelectTab] = useState(0);
   return (
     <section className="presentation">
       <div className="presentation_text">
