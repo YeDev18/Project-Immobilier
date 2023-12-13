@@ -65,7 +65,7 @@ export const steps = [
   },
   {
     title: 'Frendly host',
-    text: 'We provide a complete service fore the safe lorem ipsum ',
+    text: 'We provide a complete service fore the safe lorem ipsum  ',
   },
   {
     title: '24 hours consultation',

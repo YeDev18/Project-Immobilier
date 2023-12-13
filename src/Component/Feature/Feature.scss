@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem 4rem;
+  background-color: red;
   .feature_text {
     h2 {
       font-size: 2rem;
@@ -20,8 +21,9 @@
       gap: 1.5rem;
 
       div {
+        height: fit-content;
         background-color: $backgroundFirst;
-        padding: 0.2rem 0 0.2rem 1.1rem;
+        padding: 0.2rem 0.3rem 0.2rem 1.1rem;
         border-left: 7px solid $itemsColor;
         h3 {
           font-size: 0.9rem;
@@ -36,9 +38,14 @@
   .feature_image {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     .feature_image-picture {
-      width: 80%;
-      min-height: 500px;
+      width: 70%;
+      height: auto;
     }
+  }
+  @media (max-width: 1080px) {
+    display: flex;
+    flex-direction: column;
   }
 }
