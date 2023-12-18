@@ -1,7 +1,8 @@
 import React from 'react';
 import './Feature.scss';
 import img1 from '../../assets/6.png';
-import { steps } from '../data';
+import { steps, tenants } from '../data';
+import { Icon } from '@iconify/react';
 const Feature = () => {
   return (
     <section className="feature">
@@ -25,6 +26,35 @@ const Feature = () => {
       <div className="feature_image">
         <div className="feature_image-picture">
           <img src={img1} alt="Enjoy" />
+        </div>
+        <div className="feature_image-tenants">
+          <h3>Tenants Potentiels ({tenants.length})</h3>
+          <div>
+            {tenants.map((tenant, index) => {
+              return (
+                <div key={index} className="feature_image-tenants_section">
+                  <div className="feature_image-tenants_acronym">
+                    <p>{tenant.acronym}</p>
+                  </div>
+                  <div className="feature_image-tenants_infos">
+                    <p>{tenant.name}</p>
+                    <p>
+                      {tenant.town} : <span>{tenant.country}</span>
+                    </p>
+                  </div>
+                  <div className="feature_image-tenants_icons">
+                    <Icon icon="formkit:down" className="icon" />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="feature_image-tenants_validate">
+          <Icon
+            icon="grommet-icons:validate"
+            className="feature_image-tenants_validate-icon"
+          />
         </div>
       </div>
     </section>

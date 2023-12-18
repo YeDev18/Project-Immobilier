@@ -80,3 +80,18 @@ export const steps = [
     text: 'We provide a complete service fore the safe lorem ipsum ',
   },
 ];
+
+export const tenants = [
+  {
+    name: 'James Cooper',
+    town: 'Hiberie',
+    country: 'CA',
+    acronym: 'JC',
+  },
+  {
+    name: 'James Cooper',
+    town: 'Hiberie',
+    country: 'CA',
+    acronym: 'JC',
+  },
+];
