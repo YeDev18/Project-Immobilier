@@ -3,8 +3,6 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem 4rem;
-  // gap: 1rem;
-  // background-color: red;
   .feature_text {
     h2 {
       font-size: 2rem;
@@ -33,14 +31,22 @@
       div {
         height: fit-content;
         background-color: $backgroundFirst;
-        padding: 0.2rem 0.3rem 0.2rem 1.1rem;
+        padding: 0.2rem 0.3rem 0.2rem 0.8rem;
         border-left: 7px solid $itemsColor;
         h3 {
           font-size: 0.9rem;
+          white-space: nowrap;
+          @media (max-width: 1200px) {
+            font-size: 0.7rem;
+          }
+          @media (max-width: 1080px) {
+            font-size: 0.9rem;
+          }
         }
         .feature_text-step-p {
           font-size: 0.8rem;
           color: $textColor;
+          display: none;
         }
       }
     }
@@ -51,6 +57,7 @@
     align-items: start;
     position: relative;
     padding: 2rem 0;
+    height: fit-content;
     @media (max-width: 1080px) {
       align-items: start;
       position: relative;
@@ -80,9 +87,6 @@
       @media (max-width: 1080px) {
         top: 2.2rem;
         left: -1.5rem;
-      }
-      @media (max-width: 720px) {
-        // padding: 0.5rem;
       }
       @media (max-width: 640px) {
         top: 1rem;
@@ -178,6 +182,46 @@
         font-size: 2rem;
         @media (max-width: 720px) {
           font-size: 1.5rem;
+        }
+      }
+    }
+    .feature_image-tenants_building-infos {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 0;
+      display: flex;
+      align-items: end;
+      background-color: $backgroundFirst;
+      gap: 0.5rem;
+      padding: 0.3rem 1rem 0.3rem 0.5rem;
+      border-radius: 2%;
+      box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.1);
+      @media (max-width: 640px) {
+        bottom: 10%;
+        right: 0;
+        padding: 0.2rem 0.8rem 0.2rem 0.3rem;
+      }
+
+      .feature_image-tenants_building {
+        background-color: $itemsColor;
+        padding: 0.3rem;
+        display: flex;
+        .feature_image-tenants_building-icon {
+          color: $backgroundWhite;
+          font-size: 2rem;
+        }
+      }
+      .feature_image-tenants_building-text {
+        p {
+          &:nth-child(1) {
+            color: $textColor;
+            font-size: 0.6rem;
+            font-weight: bold;
+          }
+          &:nth-child(2) {
+            font-size: 0.8rem;
+            font-weight: bold;
+          }
         }
       }
     }

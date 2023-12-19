@@ -72,7 +72,7 @@ export const steps = [
     text: 'We provide a complete service fore the safe lorem ipsum ',
   },
   {
-    title: 'Fast respon',
+    title: 'Fast response',
     text: 'We provide a complete service fore the safe lorem ipsum ',
   },
   {

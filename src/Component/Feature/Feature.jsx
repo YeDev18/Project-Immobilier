@@ -56,6 +56,18 @@ const Feature = () => {
             className="feature_image-tenants_validate-icon"
           />
         </div>
+        <div className="feature_image-tenants_building-infos">
+          <div className="feature_image-tenants_building">
+            <Icon
+              icon="ri:building-fill"
+              className="feature_image-tenants_building-icon"
+            />
+          </div>
+          <div className="feature_image-tenants_building-text">
+            <p>Taux Unit</p>
+            <p>1,234 Unit</p>
+          </div>
+        </div>
       </div>
     </section>
   );
