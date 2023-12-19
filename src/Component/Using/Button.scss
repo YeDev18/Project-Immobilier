@@ -1,0 +1,16 @@
+@import '../../global.scss';
+
+button {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid $textColor;
+  font-family: 'Mukta', sans-serif;
+  color: $textColor;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $itemsColor;
+    color: $backgroundWhite;
+    border: none;
+  }
+}
