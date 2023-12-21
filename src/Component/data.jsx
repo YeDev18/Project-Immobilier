@@ -3,6 +3,9 @@ import img2 from '../assets/2.png';
 import img3 from '../assets/3.png';
 import img4 from '../assets/4.png';
 import img5 from '../assets/5.png';
+import img6 from '../assets/21.jpg';
+import img7 from '../assets/22.jpg';
+import img8 from '../assets/23.jpg';
 
 export const MenuItems = [
   {
@@ -93,5 +96,29 @@ export const tenants = [
     town: 'Hiberie',
     country: 'CA',
     acronym: 'JC',
+  },
+];
+
+export const appartements = [
+  {
+    image: img8,
+    title: 'The Queen Inside - Type3',
+    location: '173 Queen Parks - Canada(TOR)',
+    price: '$986K',
+    type: 'Rental',
+  },
+  {
+    image: img7,
+    title: 'The Queen Inside - Type3',
+    location: '173 Queen Parks - Canada(TOR)',
+    price: '$986K',
+    type: 'Command',
+  },
+  {
+    image: img8,
+    title: 'The Queen Inside - Type3',
+    location: '173 Queen Parks - Canada(TOR)',
+    price: '$986K',
+    type: 'appartement',
   },
 ];

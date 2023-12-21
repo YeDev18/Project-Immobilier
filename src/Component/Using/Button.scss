@@ -5,12 +5,21 @@ button {
   background: none;
   border: 1px solid $textColor;
   font-family: 'Mukta', sans-serif;
-  color: $textColor;
   border-radius: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  &:hover {
-    background-color: $itemsColor;
-    color: $backgroundWhite;
-    border: none;
+  transition: 0.3s;
+  @media (max-width: 620px) {
+    padding: 0.3rem 0.6rem;
+  }
+  // &:hover {
+  //   background-color: $itemsColor;
+  //   color: $backgroundFirst;
+  //   border: 1px solid $backgroundWhite;
+  // }
+  .button_icon {
+    font-size: 1rem;
   }
 }
