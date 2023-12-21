@@ -99,6 +99,8 @@ export const tenants = [
   },
 ];
 
+export const categories = ['Rental', 'Command', 'Appartement'];
+
 export const appartements = [
   {
     image: img8,

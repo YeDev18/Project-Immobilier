@@ -1,26 +1,33 @@
 import React from 'react';
-import Button from '../Using/Button';
 import './HomeRental.scss';
-import { appartements } from '../data';
+import { appartements, categories } from '../data';
 import { Icon } from '@iconify/react';
 
 const HomeRental = () => {
   const filterHomme = () => {};
+
   return (
     <section className="homeRental">
       <div className="hommeRental_buton">
         <div className="homeRental_button-first">
-          <Button text="Rental" nameClass="first" />
-          <Button text="Command" nameClass="first" />
-          <Button text="Appartement " nameClass="first" />
+          {categories.map((categorie, index) => {
+            return (
+              <button
+                key={index}
+                className=" button first"
+                onClick={() => {
+                  console.log(categorie);
+                }}
+              >
+                {categorie}
+              </button>
+            );
+          })}
         </div>
         <div className="homeRental_button-second">
-          <Button
-            text="Explore all learning "
-            icon="basil:arrow-right-solid"
-            className="homeRental_button-second"
-            nameClass="second"
-          />
+          <button className=" button second">
+            Explore All learning <Icon icon="basil:arrow-right-solid" />
+          </button>
         </div>
       </div>
       <div className="appartement">
