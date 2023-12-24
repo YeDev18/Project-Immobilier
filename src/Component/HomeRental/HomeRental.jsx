@@ -4,7 +4,10 @@ import { appartements, categories } from '../data';
 import { Icon } from '@iconify/react';
 
 const HomeRental = () => {
-  const filterHomme = () => {};
+  const filterHomme = () => {
+    appartements.filter(appartement => appartement.type === 'Rental');
+    // console.log('Viva');
+  };
 
   return (
     <section className="homeRental">
@@ -15,9 +18,7 @@ const HomeRental = () => {
               <button
                 key={index}
                 className=" button first"
-                onClick={() => {
-                  console.log(categorie);
-                }}
+                onClick={filterHomme}
               >
                 {categorie}
               </button>
