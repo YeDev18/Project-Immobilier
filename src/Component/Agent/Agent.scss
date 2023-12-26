@@ -1,0 +1,52 @@
+@import '../../global.scss';
+.agent {
+  padding: 2rem 4rem;
+  &_present {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    @media (max-width: 1080px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    h2 {
+      width: 30%;
+      @media (max-width: 1080px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        @media (max-width: 720px) {
+          font-size: 1rem;
+        }
+      }
+    }
+    &-text {
+      width: 40%;
+
+      p {
+        color: $textColor;
+        @media (max-width: 1080px) {
+          text-align: center;
+          padding-bottom: 0.6rem;
+        }
+        @media (max-width: 720px) {
+          font-size: 0.8rem;
+        }
+      }
+      @media (max-width: 1080px) {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  @media (max-width: 720px) {
+    padding: 2rem 1rem;
+  }
+}

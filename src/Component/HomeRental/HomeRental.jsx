@@ -1,13 +1,33 @@
-import React from 'react';
+import { React, useEffect, useState, useMemo } from 'react';
+
 import './HomeRental.scss';
 import { appartements, categories } from '../data';
 import { Icon } from '@iconify/react';
 
 const HomeRental = () => {
-  const filterHomme = () => {
-    appartements.filter(appartement => appartement.type === 'Rental');
-    // console.log('Viva');
+  const [typeSelect, setTypeSelect] = useState([]);
+  const [categorieFilter, setCategorieFilter] = useState();
+  useEffect(() => {
+    setTypeSelect(appartements);
+  }, []);
+
+  const getFilter = () => {
+    if (!categorieFilter) {
+      return typeSelect;
+    }
+    return typeSelect.filter(item => item.type === categorieFilter);
   };
+
+  var filter = useMemo(getFilter, [typeSelect, categorieFilter]);
+
+  // const filterHomme = () => {
+  //   appartements.filter(appartement => appartement.type === 'Rental');
+  //   console.log(appartement);
+  // };
+
+  const result = appartements.filter(
+    appartement => appartement.type === 'Rental'
+  );
 
   return (
     <section className="homeRental">
@@ -18,12 +38,13 @@ const HomeRental = () => {
               <button
                 key={index}
                 className=" button first"
-                onClick={filterHomme}
+                // onClick={onChangeHandle}
               >
                 {categorie}
               </button>
             );
           })}
+          {/* console.log(button) */}
         </div>
         <div className="homeRental_button-second">
           <button className=" button second">
