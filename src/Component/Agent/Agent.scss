@@ -29,6 +29,7 @@
 
       p {
         color: $textColor;
+        padding-bottom: 0.8rem;
         @media (max-width: 1080px) {
           text-align: center;
           padding-bottom: 0.6rem;
@@ -48,5 +49,66 @@
   }
   @media (max-width: 720px) {
     padding: 2rem 1rem;
+  }
+
+  &_people {
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    margin-top: 7rem;
+    // place-items: center;
+    // border: 1px solid Black;
+    place-content: center;
+    &-all {
+      // display: grid;
+      // grid-template-columns: repeat(4, 1fr);
+      // place-items: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4%;
+      @media (max-width: 1125px) {
+        row-gap: 6.5rem;
+      }
+
+      &_grid {
+        border: 1px solid Black;
+        position: relative;
+        width: 12rem;
+        height: 26vh;
+        display: flex;
+        justify-content: center;
+        &-face {
+          padding: 0 0;
+          height: 30vh;
+          width: 10rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          // margin-bottom: 10rem;
+          position: relative;
+          bottom: 4rem;
+          .image_face {
+            background-color: #f5f9fc;
+          }
+          .people {
+            width: 10em;
+          }
+
+          .infos {
+            width: 100%;
+            text-align: center;
+            line-height: 1.9rem;
+            .nom_face {
+              color: $titleColor;
+              font-weight: 600;
+            }
+            .nom_work {
+              color: $textColor;
+            }
+          }
+        }
+      }
+    }
   }
 }

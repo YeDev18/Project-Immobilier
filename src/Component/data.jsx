@@ -124,3 +124,38 @@ export const appartements = [
     type: 'appartement',
   },
 ];
+
+export const agents = [
+  {
+    nom: 'Peter Reach',
+    work: 'Diretor of Marketing',
+    facebook: 'ic:baseline-facebook',
+    twiter: 'mdi:twitter',
+    tik_tok: 'ic:baseline-tiktok',
+    linkedin: 'mdi:linkedin',
+  },
+  {
+    nom: 'Peter Ouattara',
+    work: 'Diretor of Tech',
+    facebook: 'ic:baseline-facebook',
+    twiter: 'mdi:twitter',
+    tik_tok: 'ic:baseline-tiktok',
+    linkedin: 'mdi:linkedin',
+  },
+  {
+    nom: 'Armel Reach',
+    work: 'Lead Tech',
+    facebook: 'ic:baseline-facebook',
+    twiter: 'mdi:twitter',
+    tik_tok: 'ic:baseline-tiktok',
+    linkedin: 'mdi:linkedin',
+  },
+  {
+    nom: 'Peter Kouamé',
+    work: 'Devops',
+    facebook: 'ic:baseline-facebook',
+    twiter: 'mdi:twitter',
+    tik_tok: 'ic:baseline-tiktok',
+    linkedin: 'mdi:linkedin',
+  },
+];
