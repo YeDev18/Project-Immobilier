@@ -14,6 +14,7 @@
 
     h2 {
       width: 30%;
+      color: $titleColor;
       @media (max-width: 1080px) {
         display: flex;
         flex-direction: column;
@@ -50,18 +51,35 @@
   @media (max-width: 720px) {
     padding: 2rem 1rem;
   }
+  &_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0;
+    h2 {
+      color: $titleColor;
+    }
+    &-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      @media (max-width: 1080px) {
+        width: 100%;
+      }
+      p {
+        color: $textColor;
+      }
+    }
+  }
 
   &_people {
-    // display: grid;
-    // grid-template-columns: repeat(4, 1fr);
     margin-top: 7rem;
-    // place-items: center;
-    // border: 1px solid Black;
     place-content: center;
     &-all {
-      // display: grid;
-      // grid-template-columns: repeat(4, 1fr);
-      // place-items: center;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -71,7 +89,9 @@
       }
 
       &_grid {
-        border: 1px solid Black;
+        border: 1px solid rgba(237, 234, 234, 0.55);
+        -webkit-background-clip: padding-box; /* for Safari */
+        background-clip: padding-box;
         position: relative;
         width: 12rem;
         height: 26vh;
@@ -85,7 +105,6 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          // margin-bottom: 10rem;
           position: relative;
           bottom: 4rem;
           .image_face {
@@ -105,6 +124,13 @@
             }
             .nom_work {
               color: $textColor;
+              font-weight: 300;
+              font-size: 0.9rem;
+            }
+            .sociaux {
+              display: flex;
+              justify-content: center;
+              gap: 0.5rem;
             }
           }
         }

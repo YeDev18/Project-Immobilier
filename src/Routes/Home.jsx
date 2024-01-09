@@ -5,6 +5,7 @@ import Partner from '../Component/Partner/Partner';
 import Feature from '../Component/Feature/Feature';
 import HomeRental from '../Component/HomeRental/HomeRental';
 import Agent from '../Component/Agent/Agent';
+import Testimonial from '../Component/Testimonial/Testimonial';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Feature />
       <HomeRental />
       <Agent />
+      <Testimonial />
     </>
   );
 };

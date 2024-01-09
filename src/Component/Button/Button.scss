@@ -15,6 +15,7 @@ button {
   background-color: $secondColor;
   border: none;
   outline: none;
+  width: fit-content;
   &:hover {
     background-color: $itemsColor;
     color: $backgroundFirst;

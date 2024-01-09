@@ -10,7 +10,7 @@ const Agent = () => {
     <section className="agent">
       <div className="agent_present">
         <h2>
-          List of our agents in the different house in Beverlly. Lorem Ipsum
+          List of our agents in the different house in Beverlly Lorem Ipsum
         </h2>
         <div className="agent_present-text">
           <p>
@@ -35,7 +35,7 @@ const Agent = () => {
                   <div className="infos">
                     <p className="nom_face">{agent.nom}</p>
                     <p className="nom_work">{agent.work}</p>
-                    <div>
+                    <div className="sociaux">
                       <Icon icon={agent.facebook} />
                       <Icon icon={agent.linkedin} />
                       <Icon icon={agent.tik_tok} />
@@ -46,18 +46,21 @@ const Agent = () => {
               </div>
             );
           })}
-          {/* <div className="agent_people-all_grid">
-            <div className="agent_people-all_grid-face">
-              <img src={people} alt="" />
-              <div className="infos">
-                <p>Charlie Parker</p>
-                <p>Director Général</p>
-                <div>
-                  <p>Icon</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
+        </div>
+      </div>
+      <div className="agent_column">
+        <h2>98% of resident recomanded</h2>
+        <div className="agent_column-text">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </p>
+          <Button
+            libele="Learn more"
+            url="About"
+            className="agent_present-button"
+          />
         </div>
       </div>
     </section>

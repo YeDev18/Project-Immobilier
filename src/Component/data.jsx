@@ -6,6 +6,7 @@ import img5 from '../assets/5.png';
 import img6 from '../assets/21.jpg';
 import img7 from '../assets/22.jpg';
 import img8 from '../assets/23.jpg';
+import img9 from '../assets/30.jpg';
 
 export const MenuItems = [
   {
@@ -157,5 +158,28 @@ export const agents = [
     twiter: 'mdi:twitter',
     tik_tok: 'ic:baseline-tiktok',
     linkedin: 'mdi:linkedin',
+  },
+];
+
+export const testimonials = [
+  {
+    image: img1,
+    nom: 'Andrew Carton',
+    testimonial: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  },
+  {
+    image: img1,
+    nom: 'Jonathan Vie',
+    testimonial: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  },
+  {
+    image: img1,
+    nom: 'Hude Chivje',
+    testimonial: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  },
+  {
+    image: img1,
+    nom: 'Street Profit',
+    testimonial: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
   },
 ];
