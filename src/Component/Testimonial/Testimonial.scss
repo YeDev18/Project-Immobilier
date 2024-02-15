@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .testimonial {
-  background-color: rgb(243, 87, 87);
+  background-color: $backgroundWhite;
   padding: 2rem 4rem;
   &_bloc {
     display: grid;
@@ -11,18 +11,19 @@
     gap: 2rem;
     &-only {
       max-width: 23rem;
-      background-color: aliceblue;
+      background-color: #f7f6f6;
       padding: 1.5rem;
       display: flex;
       flex-direction: column;
       row-gap: 0.5rem;
+      box-shadow: 0px 7px 22px -12px rgba(0, 0, 0, 0.1);
       .people_appreciation {
         display: flex;
         justify-content: space-between;
         align-items: center;
         // padding: 0 2rem;
         .people {
-          background-color: aquamarine;
+          background-color: $textColor;
           height: 3rem;
           width: 3rem;
           padding: 0.2rem;
@@ -38,6 +39,10 @@
       .info {
         font-size: 0.9rem;
         font-weight: bold;
+      }
+      .text {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
       }
     }
   }

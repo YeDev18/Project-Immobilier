@@ -28,11 +28,15 @@
         grid-template-columns: 1fr;
       }
 
-      div {
+      .feature_text-step-block {
         height: fit-content;
         background-color: $backgroundFirst;
         padding: 0.2rem 0.3rem 0.2rem 0.8rem;
         border-left: 7px solid $itemsColor;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: 2s ease-out;
+
         h3 {
           font-size: 0.9rem;
           white-space: nowrap;
@@ -46,7 +50,10 @@
         .feature_text-step-p {
           font-size: 0.8rem;
           color: $textColor;
-          // display: none;
+          overflow: hidden !important;
+        }
+        &:hover {
+          background-color: red;
         }
       }
     }

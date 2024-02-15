@@ -6,6 +6,7 @@ import Feature from '../Component/Feature/Feature';
 import HomeRental from '../Component/HomeRental/HomeRental';
 import Agent from '../Component/Agent/Agent';
 import Testimonial from '../Component/Testimonial/Testimonial';
+import Footer from '../Component/Footer/Footer';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <HomeRental />
       <Agent />
       <Testimonial />
+      <Footer />
     </>
   );
 };

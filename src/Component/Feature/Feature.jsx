@@ -15,9 +15,11 @@ const Feature = () => {
         <div className="feature_text-step">
           {steps.map((step, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="feature_text-step-block">
                 <h3>{step.title}</h3>
+                {/* <div className="feature_text-step-text"> */}
                 <p className="feature_text-step-p">{step.text}</p>
+                {/* </div> */}
               </div>
             );
           })}

@@ -22,7 +22,7 @@ const Testimonial = () => {
                 </div>
               </div>
               <p className="info">{testimonial.nom}</p>
-              <p className="test">{testimonial.testimonial}</p>
+              <p className="text">{testimonial.testimonial}</p>
             </div>
           );
         })}

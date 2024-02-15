@@ -35,16 +35,11 @@ const HomeRental = () => {
         <div className="homeRental_button-first">
           {categories.map((categorie, index) => {
             return (
-              <button
-                key={index}
-                className=" button first"
-                // onClick={onChangeHandle}
-              >
+              <button key={index} className=" button first">
                 {categorie}
               </button>
             );
           })}
-          {/* console.log(button) */}
         </div>
         <div className="homeRental_button-second">
           <button className=" button second">
