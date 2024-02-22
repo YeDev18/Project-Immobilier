@@ -24,8 +24,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
+
       @media (max-width: 724px) {
         grid-template-columns: 1fr;
+        place-items: center;
       }
 
       .feature_text-step-block {
@@ -34,8 +36,16 @@
         padding: 0.2rem 0.3rem 0.2rem 0.8rem;
         border-left: 7px solid $itemsColor;
         display: grid;
-        grid-template-rows: 0fr;
-        transition: 2s ease-out;
+        transition: 0.5s ease-out;
+        width: 20rem;
+        div {
+          display: flex;
+          justify-content: space-between;
+          row-gap: 5rem;
+          .icon {
+            cursor: pointer;
+          }
+        }
 
         h3 {
           font-size: 0.9rem;
@@ -50,10 +60,13 @@
         .feature_text-step-p {
           font-size: 0.8rem;
           color: $textColor;
-          overflow: hidden !important;
         }
+        // .feature_text-step-p2 {
+        //   display: none;
+        // }
         &:hover {
-          background-color: red;
+          // background-color: $itemsColor;
+          // grid-template-rows: (2, 5fr);
         }
       }
     }

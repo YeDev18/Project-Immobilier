@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Feature.scss';
 import img1 from '../../assets/6.png';
 import { steps, tenants } from '../data';
 import { Icon } from '@iconify/react';
+
 const Feature = () => {
+  const [current, setCurrent] = useState(null);
+  const [toggle, setToggle] = useState(false);
   return (
     <section className="feature">
       <div className="feature_text">
@@ -13,13 +16,33 @@ const Feature = () => {
           estate. We provide a conplete
         </p>
         <div className="feature_text-step">
-          {steps.map((step, index) => {
+          {steps.map(step => {
             return (
-              <div key={index} className="feature_text-step-block">
-                <h3>{step.title}</h3>
-                {/* <div className="feature_text-step-text"> */}
-                <p className="feature_text-step-p">{step.text}</p>
-                {/* </div> */}
+              <div key={step.id} className="feature_text-step-block">
+                <div>
+                  <h3>{step.title}</h3>
+                  <Icon
+                    icon={
+                      current === step.id && toggle
+                        ? 'mdi:chevron-up'
+                        : 'mdi:chevron-down'
+                    }
+                    className="icon"
+                    onClick={e => {
+                      setCurrent(step.id);
+                      setToggle(!toggle);
+                      console.log(current);
+                    }}
+                  />
+                </div>
+                <p
+                  style={
+                    current === step.id && toggle ? {} : { display: 'none' }
+                  }
+                  className="feature_text-step-p "
+                >
+                  {step.text}
+                </p>
               </div>
             );
           })}

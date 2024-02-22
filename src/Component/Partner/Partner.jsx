@@ -1,4 +1,6 @@
+import React from 'react';
 import { partner } from '../data';
+
 import './Partner.scss';
 
 const Partner = () => {

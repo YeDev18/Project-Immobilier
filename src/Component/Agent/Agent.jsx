@@ -1,4 +1,5 @@
-import { React, Link } from 'react';
+import React from 'react';
+import { Link } from 'react';
 import './Agent.scss';
 import Button from '../Button/Button';
 import people from '../../assets/people.svg';

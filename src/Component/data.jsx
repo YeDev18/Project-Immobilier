@@ -60,28 +60,41 @@ export const partner = [img1, img2, img3, img4, img5];
 
 export const steps = [
   {
+    id: 0,
     title: 'Find excellent deals',
     text: 'We provide a complete service fore the safe lorem ipsum ',
+    icon: 'mdi:chevron-up',
+    icon1: '"mdi:chevron-down"',
   },
   {
+    id: 1,
     title: 'Property insurance',
     text: 'We provide a complete service fore the safe lorem ipsum ',
+    icon: 'mdi:chevron-up',
   },
   {
+    id: 2,
     title: 'Frendly host',
     text: 'We provide a complete service fore the safe lorem ipsum  ',
+    icon: 'mdi:chevron-up',
   },
   {
+    id: 3,
     title: '24 hours consultation',
     text: 'We provide a complete service fore the safe lorem ipsum ',
+    icon: 'mdi:chevron-up',
   },
   {
+    id: 4,
     title: 'Fast response',
     text: 'We provide a complete service fore the safe lorem ipsum ',
+    icon: 'mdi:chevron-up',
   },
   {
+    id: 5,
     title: 'Compagny professionnal',
     text: 'We provide a complete service fore the safe lorem ipsum ',
+    icon: 'mdi:chevron-up',
   },
 ];
 
