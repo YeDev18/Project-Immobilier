@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.scss';
-import { useNavigate, Link } from 'react-router-dom';
 
 const Footer = () => {
   // const navigate = useNavigate();
