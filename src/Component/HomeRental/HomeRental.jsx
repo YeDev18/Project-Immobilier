@@ -6,30 +6,6 @@ import { appartements, categories } from '../data';
 import { Icon } from '@iconify/react';
 
 const HomeRental = () => {
-  const [typeSelect, setTypeSelect] = useState([]);
-  const [categorieFilter, setCategorieFilter] = useState();
-  useEffect(() => {
-    setTypeSelect(appartements);
-  }, []);
-
-  const getFilter = () => {
-    if (!categorieFilter) {
-      return typeSelect;
-    }
-    return typeSelect.filter(item => item.type === categorieFilter);
-  };
-
-  var filter = useMemo(getFilter, [typeSelect, categorieFilter]);
-
-  // const filterHomme = () => {
-  //   appartements.filter(appartement => appartement.type === 'Rental');
-  //   console.log(appartement);
-  // };
-
-  const result = appartements.filter(
-    appartement => appartement.type === 'Rental'
-  );
-
   return (
     <section className="homeRental">
       <div className="hommeRental_buton">

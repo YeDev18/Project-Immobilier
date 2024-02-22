@@ -1,9 +1,10 @@
 @import '../../global.scss';
 
 .footer {
-  height: 5rem;
+  height: fit-content;
   width: 100%;
   background-color: $secondColor;
+  padding: 2rem 2rem;
   .footer_div {
     width: 100%;
     display: flex;
@@ -12,12 +13,16 @@
     align-items: center;
     p {
       color: $backgroundFirst;
+      text-align: center;
       &:nth-child(1) {
         font-size: 0.9rem;
       }
       &:nth-child(2) {
         font-size: 0.8rem;
       }
+    }
+    a {
+      color: $backgroundFirst;
     }
   }
 }

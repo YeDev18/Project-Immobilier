@@ -13,7 +13,7 @@ const Testimonial = () => {
                 <div className="people">
                   <Icon icon="icon-park-solid:people" className="people_icon" />
                 </div>
-                <div>
+                <div className="star">
                   <Icon icon="material-symbols:star" />
                   <Icon icon="material-symbols:star" />
                   <Icon icon="material-symbols:star" />

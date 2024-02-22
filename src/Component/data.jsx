@@ -190,9 +190,4 @@ export const testimonials = [
     nom: 'Hude Chivje',
     testimonial: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.`,
   },
-  {
-    people: 'icon-park-solid:people',
-    nom: 'Street Profit',
-    testimonial: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.`,
-  },
 ];
