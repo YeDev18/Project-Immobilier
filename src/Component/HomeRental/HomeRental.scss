@@ -37,6 +37,11 @@
           color: $backgroundFirst;
           border: 1px solid $backgroundWhite;
         }
+        &:focus {
+          background-color: $itemsColor;
+          color: $backgroundFirst;
+          border: 1px solid $backgroundWhite;
+        }
       }
     }
     .homeRental_button-second {

@@ -12,6 +12,12 @@ const HomeRental = () => {
   const handleClick = () => {
     setCategory(category);
   };
+  const fil = obj => {
+    if (obj.type === 'Rental') {
+      return true;
+    }
+  };
+  // category === 'All';
   const Filtre = appartements => {
     return appartements.filter(appartement => {
       if (category === 'All') {
