@@ -121,21 +121,22 @@ export const appartements = [
     title: 'The Queen Inside - Type1',
     location: '173 Queen Parks - Canada(TOR)',
     price: '$986K',
-    type: 'Rental',
+    id: 'Rental',
   },
+
   {
     image: img7,
     title: 'The Queen Inside - Type2',
     location: '173 Queen Parks - Canada(TOR)',
     price: '$986K',
-    type: 'Command',
+    id: 'Command',
   },
   {
     image: img8,
     title: 'The Queen Inside - Type3',
     location: '173 Queen Parks - Canada(TOR)',
     price: '$986K',
-    type: 'Appartement',
+    id: 'Appartement',
   },
 ];
 

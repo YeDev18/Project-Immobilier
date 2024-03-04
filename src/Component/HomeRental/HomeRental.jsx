@@ -6,21 +6,26 @@ import { appartements, categories } from '../data';
 import { Icon } from '@iconify/react';
 
 const HomeRental = () => {
-  const [category, setCategory] = useState(null);
+  const [category, setCategory] = useState('All');
+  const [home, setHome] = useState([]);
 
-  const Filter = objet => {
-    if (objet.type) {
-      return objet;
-    } else if (objet.type === 'Rental') {
-      return objet.title;
-    } else if (objet.type === 'Command') {
-      return objet.title;
-    } else if (objet.type === 'Appartement') {
-      return objet.title;
-    }
+  const handleClick = () => {
+    setCategory(category);
   };
-
-  const appart = appartements.filter(Filter);
+  const Filtre = appartements => {
+    return appartements.filter(appartement => {
+      if (category === 'All') {
+        return true;
+      } else if (category === 'Rental') {
+        return appartement.id === 'Rental';
+      } else if (category === 'Command') {
+        return appartement.id === 'Command';
+      } else if (category === 'Appartement') {
+        return appartement.id === 'Appartement';
+      }
+    });
+  };
+  const Filter = useMemo(() => Filtre(appartements), [category]);
 
   return (
     <section className="homeRental">
@@ -33,7 +38,6 @@ const HomeRental = () => {
                 className=" button first"
                 onClick={() => {
                   setCategory(category);
-                  console.log(category);
                 }}
               >
                 {category}
@@ -47,33 +51,39 @@ const HomeRental = () => {
           </button>
         </div>
       </div>
-      <div className="appartement">
-        {appartements.map((appartement, index) => {
-          return (
-            <div key={index} className="appartementFirst">
-              <div className="appartement_image">
-                <img src={appartement.image} alt="" />
-              </div>
-              <div className="appartement_info">
-                <h2>{appartement.title}</h2>
-                <p>{appartement.location}</p>
-                <div className="price_details">
-                  <p className="price">{appartement.price}</p>
-                  <div>
-                    <p>Details</p>
-                    <Icon
-                      icon="basil:arrow-right-solid"
-                      className="details_icon"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      <List items={Filter} />
     </section>
   );
 };
 
 export default HomeRental;
+
+const List = ({ items }) => {
+  return (
+    <div className="appartement">
+      {items.map((item, index) => {
+        return (
+          <div key={index} className="appartementFirst">
+            <div className="appartement_image">
+              <img src={item.image} alt="" />
+            </div>
+            <div className="appartement_info">
+              <h2>{item.title}</h2>
+              <p>{item.location}</p>
+              <div className="price_details">
+                <p className="price">{item.price}</p>
+                <div>
+                  <p>Details</p>
+                  <Icon
+                    icon="basil:arrow-right-solid"
+                    className="details_icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
