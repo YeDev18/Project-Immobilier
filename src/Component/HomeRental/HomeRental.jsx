@@ -6,14 +6,37 @@ import { appartements, categories } from '../data';
 import { Icon } from '@iconify/react';
 
 const HomeRental = () => {
+  const [category, setCategory] = useState(null);
+
+  const Filter = objet => {
+    if (objet.type) {
+      return objet;
+    } else if (objet.type === 'Rental') {
+      return objet.title;
+    } else if (objet.type === 'Command') {
+      return objet.title;
+    } else if (objet.type === 'Appartement') {
+      return objet.title;
+    }
+  };
+
+  const appart = appartements.filter(Filter);
+
   return (
     <section className="homeRental">
       <div className="hommeRental_buton">
         <div className="homeRental_button-first">
-          {categories.map((categorie, index) => {
+          {categories.map((category, index) => {
             return (
-              <button key={index} className=" button first">
-                {categorie}
+              <button
+                key={index}
+                className=" button first"
+                onClick={() => {
+                  setCategory(category);
+                  console.log(category);
+                }}
+              >
+                {category}
               </button>
             );
           })}

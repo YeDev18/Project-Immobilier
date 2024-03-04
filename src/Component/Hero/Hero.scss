@@ -2,7 +2,6 @@
 .presentation {
   width: 100%;
   position: relative;
-  z-index: 999;
   overflow: visible;
 
   display: flex;
@@ -27,7 +26,6 @@
         padding-bottom: 2rem;
         color: $titleColor;
         position: relative;
-        z-index: 9999;
         @media (max-width: 900px) {
           text-align: center;
           padding: 1.5rem;
@@ -38,7 +36,6 @@
         color: $textColor;
         text-shadow: 15px 1px 10px rgba(183, 183, 183, 0.19);
         position: relative;
-        z-index: 9999;
         @media (max-width: 900px) {
           text-align: center;
         }
@@ -47,7 +44,7 @@
     &-nav {
       height: 7rem;
       margin-bottom: 2rem;
-      z-index: 9999;
+      z-index: 2;
       box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px;
       @media (max-width: 900px) {
         width: 100%;
@@ -99,7 +96,6 @@
           }
           .form_detail {
             display: grid;
-            // grid-template-columns: repeat(3, 1fr);
             grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
             width: 90%;
           }
@@ -139,7 +135,6 @@
             border: none;
             cursor: pointer;
             @media (max-width: 768px) {
-              width: 50%;
               &::after {
                 content: 'Search';
                 color: $backgroundFirst;
@@ -147,8 +142,7 @@
               }
             }
             .drawing {
-              font-size: 3rem;
-              padding: 0.7rem 0rem 0.7rem 0.7rem;
+              font-size: 1.5rem;
               color: $backgroundFirst;
             }
           }
