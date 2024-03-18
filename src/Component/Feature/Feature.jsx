@@ -31,7 +31,6 @@ const Feature = () => {
                     onClick={e => {
                       setCurrent(step.id);
                       setToggle(!toggle);
-                      console.log(current);
                     }}
                   />
                 </div>
