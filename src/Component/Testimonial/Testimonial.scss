@@ -46,6 +46,9 @@
         font-size: 0.9rem;
         line-height: 1.5rem;
       }
+      @media (max-width: 720px) {
+        max-width: 100%;
+      }
     }
     @media (max-width: 720px) {
       grid-template-columns: repeat(1, 1fr);

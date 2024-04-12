@@ -14,7 +14,8 @@ const Hero = () => {
           </h1>
           <p>
             We provide a complete service for a sale.
-            <br /> Purchase or rental of real state
+            <br />
+            Purchase or rental of real state
           </p>
         </div>
 

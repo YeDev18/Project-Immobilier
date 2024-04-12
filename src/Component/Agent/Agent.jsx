@@ -1,10 +1,15 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react';
 import './Agent.scss';
 import Button from '../Button/Button';
 import people from '../../assets/people.svg';
 import { Icon } from '@iconify/react';
 import { agents } from '../data';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper/modules';
 
 const Agent = () => {
   return (
@@ -31,19 +36,23 @@ const Agent = () => {
           {agents.map((agent, index) => {
             return (
               <div className="agent_people-all_grid" key={index}>
-                <div className="agent_people-all_grid-face">
-                  <img src={people} alt="People" className="image_face" />
-                  <div className="infos">
-                    <p className="nom_face">{agent.nom}</p>
-                    <p className="nom_work">{agent.work}</p>
-                    <div className="sociaux">
-                      <Icon icon={agent.facebook} />
-                      <Icon icon={agent.linkedin} />
-                      <Icon icon={agent.tik_tok} />
-                      <Icon icon={agent.twiter} />
+                <Swiper pagination={true} modules={[Pagination]}>
+                  <SwiperSlide>
+                    <div className="agent_people-all_grid-face">
+                      <img src={people} alt="People" className="image_face" />
+                      <div className="infos">
+                        <p className="nom_face">{agent.nom}</p>
+                        <p className="nom_work">{agent.work}</p>
+                        <div className="sociaux">
+                          <Icon icon={agent.facebook} />
+                          <Icon icon={agent.linkedin} />
+                          <Icon icon={agent.tik_tok} />
+                          <Icon icon={agent.twiter} />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
             );
           })}
