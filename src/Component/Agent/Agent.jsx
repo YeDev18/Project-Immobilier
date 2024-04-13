@@ -36,23 +36,23 @@ const Agent = () => {
           {agents.map((agent, index) => {
             return (
               <div className="agent_people-all_grid" key={index}>
-                <Swiper pagination={true} modules={[Pagination]}>
-                  <SwiperSlide>
-                    <div className="agent_people-all_grid-face">
-                      <img src={people} alt="People" className="image_face" />
-                      <div className="infos">
-                        <p className="nom_face">{agent.nom}</p>
-                        <p className="nom_work">{agent.work}</p>
-                        <div className="sociaux">
-                          <Icon icon={agent.facebook} />
-                          <Icon icon={agent.linkedin} />
-                          <Icon icon={agent.tik_tok} />
-                          <Icon icon={agent.twiter} />
-                        </div>
-                      </div>
+                {/* <Swiper pagination={true} modules={[Pagination]}> */}
+                {/* <SwiperSlide> */}
+                <div className="agent_people-all_grid-face">
+                  <img src={people} alt="People" className="image_face" />
+                  <div className="infos">
+                    <p className="nom_face">{agent.nom}</p>
+                    <p className="nom_work">{agent.work}</p>
+                    <div className="sociaux">
+                      <Icon icon={agent.facebook} />
+                      <Icon icon={agent.linkedin} />
+                      <Icon icon={agent.tik_tok} />
+                      <Icon icon={agent.twiter} />
                     </div>
-                  </SwiperSlide>
-                </Swiper>
+                  </div>
+                </div>
+                {/* </SwiperSlide>
+                </Swiper> */}
               </div>
             );
           })}
